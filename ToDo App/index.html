@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>ToDo App</title>
+		<meta name="ToDo App" />
+		<link href="lib/todo.css" type="text/css" />
+	</head>
+	<body>
+		<div class="listInput"></div>
+		<div class="listItems"></div>
+		
+		<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="lib/underscore-min.js"></script>
+		<script type="text/javascript" src="lib/backbone-min.js"></script>
+		<script type="text/javascript" src="lib/view.js"></script>
+		
+		<script type="text/template" class="todoInput">
+			<div id="todoInputFields">
+				<input type="text" id="tfAddTasks" placeholder="Add a thing to do..." />
+				<button type="submit" class="btn">Add</button>
+			</div>
+		</script>
+		
+		<script type="text/template" class="todoTemplate">
+			<div class="todoDiv">
+				<input type="checkbox" id=<%= id %> />
+				<%= title %>
+			</div>
+		</script>
+	</body>
+</html>
